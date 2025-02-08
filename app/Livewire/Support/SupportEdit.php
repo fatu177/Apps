@@ -35,7 +35,6 @@ class SupportEdit extends Component
             'status' => $this->status,
         ]);
 
-        session()->flash('message', 'Post updated successfully.');
         return redirect()->route('Support.Index');
     }
     public function render()

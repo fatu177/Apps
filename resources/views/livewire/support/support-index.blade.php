@@ -16,7 +16,7 @@
         </div>
         <div class="bg-white p-6 rounded-md shadow-md">
             <div class="flex items-center mb-4">
-                <input type="text" wire:model.live="search" />
+                <input  class="border border-gray-300 rounded-md p-2" wire:model.live="search" placeholder="Search" type="text">
             </div>
             <table class="min-w-full bg-white">
                 <thead>

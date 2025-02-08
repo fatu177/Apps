@@ -2,7 +2,7 @@
 @section('content')
 <div class="flex-item">
     <h1 class="text-2xl font-bold mb-4">Buat Post Baru</h1>
-    <form wire:submit.prevent="store" class="space-y-4">
+    <form wire:submit.prevent="update" class="space-y-4">
         <div>
             <label for="department" class="block text-sm font-medium text-gray-700">Department</label>
             <input type="text" wire:model="department" id="department"

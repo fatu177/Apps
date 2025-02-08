@@ -25,7 +25,6 @@ class SupportCreate extends Component
             'status' => $this->status,
         ]);
 
-        session()->flash('message', 'Post created successfully.');
         return redirect()->route('Support.Index');
     }
     public function render()

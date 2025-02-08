@@ -19,7 +19,8 @@ class SupportIndex extends Component
     public function render()
     {
         if ($this->search != '') {
-            $data = Support::where('department', 'like', '%' . $this->search . '%')->get();
+            $data = Support::where('department', 'like', '%' . $this->search . '%')->
+            orWhere('subject', 'like', '%' . $this->search . '%')->get();
         } else {
             $data = Support::all();
         }
